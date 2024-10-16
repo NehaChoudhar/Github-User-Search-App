@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.bleepstatic.com/content/hl-images/2021/05/10/GitHub-headpic.jpg'); /* Update this with the actual hosted path */
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px; 
+}
+
+.container {
+    text-align: center;
+    background-image: url('https://media.istockphoto.com/id/1167863983/vector/horizontal-vector-illustration-of-an-empty-light-blue-grungy-textured-background.jpg?s=612x612&w=0&k=20&c=AgBWyrJP5O0GlKOGwzO5IXl6NrspMIR7q1Z7kYq8YsI=');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+
+#username {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 180px;
+    margin-bottom: 10px; 
+}
+
+#search-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #0056b3;
+}
+
+.user-info {
+    margin-top: 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+}
+
+.user-info img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.user-info a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; 
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+
+    .search-box {
+        flex-direction: column; /* Align the input and button in a column */
+        gap: 10px;
+    }
+
+    #username {
+        width: 100%; 
+    }
+
+    #search-btn {
+        width: 100%; 
+        margin-left: 0;
+    }
+
+    .user-info img {
+        width: 70%; 
+        margin: 0 auto; 
+    }
+
+    .user-info p, .user-info a {
+        font-size: 12px;
+    }
+}
